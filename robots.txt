@@ -1,0 +1,7 @@
+# norimaki1219-cmyk.github.io（ドメイン直下）の robots.txt
+# このドメインの下にある全サイト（/eda/、/kasane/ など）に効く。
+# どのサイトの検索も妨げないよう、全ページを許可している。
+User-agent: *
+Allow: /
+
+Sitemap: https://norimaki1219-cmyk.github.io/eda/sitemap.xml
