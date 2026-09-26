@@ -5,7 +5,9 @@ GitHub Pages のドメイン直下（`https://norimaki1219-cmyk.github.io/`）�
 | ファイル | 内容 |
 |---|---|
 | `robots.txt` | 検索エンジン向けの設定。ドメイン直下にしか置けないため、このリポジトリで管理する。このドメインの下の全サイト（`/eda/`、`/kasane/` など）に効く |
-| `.nojekyll` | GitHub Pages の Jekyll 処理を止める。これがないと、この README がトップページとして表示されてしまう |
+| `index.html` | ドメイン直下のトップページ（サイト一覧）。EDA と KASANE へ案内する。どちらかへ自動で転送はしない |
+| `.nojekyll` | GitHub Pages の Jekyll 処理を止める |
 
-- トップページ（`index.html`）は置いていない（直下は「見つからない」のまま）。各サイトは `/eda/`・`/kasane/` など、それぞれのリポジトリで公開している。
+- 各サイトは `/eda/`・`/kasane/` など、それぞれのリポジトリで公開している。サイトが増えたら `index.html` にカードを足す。
+- EDA のロゴ・アイコンは `/eda/` のものを参照している（EDA 側でファイル名を変えたらここも直す）。
 - サイトマップを持つサイトが増えたら、`robots.txt` に `Sitemap:` 行を足す。

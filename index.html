@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>サイト一覧｜EDA（枝）・KASANE</title>
+<meta name="description" content="norimaki1219-cmyk.github.io で公開しているサイトの一覧です。困りごと中心の知識マップ「EDA（枝）」と、業務ナレッジの「KASANE（FACTORY KNOWLEDGE EXPERIENCE）」へご案内します。">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://norimaki1219-cmyk.github.io/">
+<link rel="icon" href="eda/favicon.png" type="image/png">
+<style>
+:root{--bg:#f3f7fb;--panel:#fff;--ink:#15324a;--sub:#5d7286;--line:#e3eaf1;--brand:#1f9d74}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1b26;--panel:#16283a;--ink:#e6eef5;--sub:#9fb3c4;--line:#24384b;--brand:#3cc39a}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Hiragino Sans","Yu Gothic UI","Meiryo",sans-serif;line-height:1.7}
+main{max-width:880px;margin:0 auto;padding:56px 16px}
+h1{font-size:26px;margin:0 0 6px}
+.lead{color:var(--sub);margin:0 0 28px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+a.card{display:block;background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:20px 22px;text-decoration:none;color:inherit;box-shadow:0 4px 18px rgba(21,50,74,.06);transition:transform .15s,border-color .15s}
+a.card:hover{transform:translateY(-2px);border-color:var(--brand)}
+.card img{height:48px;width:auto;display:block;margin-bottom:10px}
+.card h2{font-size:18px;margin:0 0 6px}
+.card p{margin:0;color:var(--sub);font-size:14px}
+.card .go{display:inline-block;margin-top:12px;color:var(--brand);font-weight:700;font-size:14px}
+footer{margin-top:40px;color:var(--sub);font-size:12px}
+</style>
+</head>
+<body>
+<main>
+  <h1>サイト一覧</h1>
+  <p class="lead">このドメインで公開しているサイトです。</p>
+  <div class="grid">
+    <a class="card" href="eda/">
+      <img src="eda/logo.png" alt="EDA（枝）" width="121" height="48">
+      <h2>EDA（枝）</h2>
+      <p>「困った」から知恵へたどり着く、困りごと中心の知識マップ。原因・解決策・「できた！」がつながります（デモ版）。</p>
+      <span class="go">EDA を開く →</span>
+    </a>
+    <a class="card" href="kasane/">
+      <h2>KASANE</h2>
+      <p>FACTORY KNOWLEDGE EXPERIENCE。業種ごとの業務ナレッジのインデックスです。</p>
+      <span class="go">KASANE を開く →</span>
+    </a>
+  </div>
+  <footer>norimaki1219-cmyk.github.io</footer>
+</main>
+</body>
+</html>
