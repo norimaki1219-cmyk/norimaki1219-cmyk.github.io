@@ -4,5 +4,27 @@
 User-agent: *
 Allow: /
 
+# AI の学習のために集める巡回は断る（2026-10-04）。検索と、AI検索の回答のための巡回は断らない。
+User-agent: GPTBot
+User-agent: ClaudeBot
+User-agent: anthropic-ai
+User-agent: Claude-Web
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+User-agent: CCBot
+User-agent: Bytespider
+User-agent: meta-externalagent
+User-agent: FacebookBot
+User-agent: Amazonbot
+User-agent: cohere-ai
+User-agent: cohere-training-data-crawler
+User-agent: Diffbot
+User-agent: ImagesiftBot
+User-agent: Omgilibot
+User-agent: AI2Bot
+User-agent: Timpibot
+User-agent: PanguBot
+Disallow: /
+
 Sitemap: https://norimaki1219-cmyk.github.io/sitemap.xml
 Sitemap: https://norimaki1219-cmyk.github.io/eda/sitemap.xml
