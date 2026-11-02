@@ -27,4 +27,3 @@ User-agent: PanguBot
 Disallow: /
 
 Sitemap: https://norimaki1219-cmyk.github.io/sitemap.xml
-Sitemap: https://norimaki1219-cmyk.github.io/eda/sitemap.xml
