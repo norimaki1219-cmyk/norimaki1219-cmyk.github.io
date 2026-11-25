@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!-- 以前の公開URL（GitHub Pages：https://norimaki1219-cmyk.github.io/eda/）から、新しいURLへ転送する。
+     #ks20 などのマップの ID は、検索用のマップのページ /map/<ID> へ直接移す（2026-11-26〜。読める見出しのページで、
+     「EDA でこのマップを開く」から画面へ進める。中心でない ID はサーバーが中心のページへ 301）。
+     画面の切り替え（#guide・#about など、ui.js の最後で開くもの）と #tag=… などはトップへ #… ごと引き継ぐ。?utm_… はどちらも引き継ぐ。
+     kasane の note 記事がこのURLにリンクしているため、消さないこと。index.html と 404.html は同じ中身。
+     画面の本体は public/ にあり、Cloudflare Workers（https://eda.eda-edamap.workers.dev/）から配信している -->
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EDA（枝）は新しいURLに移りました</title>
+<meta name="robots" content="noindex">
+<link rel="canonical" href="https://eda.eda-edamap.workers.dev/">
+<script>
+(function () {
+  var base = 'https://eda.eda-edamap.workers.dev', h = location.hash.slice(1), q = location.search;
+  var screens = /^(legal|privacy|about|guide|rank|team|experts|report|notice|world)$/;
+  var to = /^[A-Za-z0-9_-]+$/.test(h) && !screens.test(h)
+    ? base + '/map/' + h + q
+    : base + '/' + q + location.hash;
+  location.replace(to);
+})();
+</script>
+<meta http-equiv="refresh" content="0; url=https://eda.eda-edamap.workers.dev/">
+</head>
+<body style="font-family:sans-serif;padding:24px;line-height:1.8">
+<p>EDA（枝）は新しいURLに移りました。自動で移動しない場合は、こちらを開いてください。</p>
+<p><a href="https://eda.eda-edamap.workers.dev/">https://eda.eda-edamap.workers.dev/</a></p>
+</body>
+</html>
